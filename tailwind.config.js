@@ -11,6 +11,9 @@ module.exports = {
         primary: "#D5D6D9",
         secondary: "#FDD892",
       },
+      animation: {
+        "slow-spin": "spin 10s linear infinite",
+      },
     },
   },
   plugins: [],
