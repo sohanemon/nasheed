@@ -1,6 +1,4 @@
-import Image from "next/image";
-import { Inter, Poppins } from "@next/font/google";
-import styles from "./page.module.css";
+import { Poppins } from "@next/font/google";
 
 const poppins = Poppins({ subsets: ["latin"], weight: "400" });
 
