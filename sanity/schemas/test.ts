@@ -15,6 +15,14 @@ export default defineType({
       title: 'Another',
       type: 'text',
     }),
+    defineField({
+      name: 'audio',
+      title: 'Audio',
+      type: 'file',
+      options: {
+        storeOriginalFilename: true,
+      },
+    }),
   ],
   preview: {
     select: {
