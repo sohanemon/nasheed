@@ -1,11 +1,8 @@
-"use client";
+import { Poppins } from "@next/font/google";
+import ApolloContext from "../context/apollo-context";
 import "./globals.css";
-import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
+const poppins = Poppins({ subsets: ["latin"], weight: "400" });
 
-const client = new ApolloClient({
-  uri: "https://3wo8bdy6.api.sanity.io/v1/graphql/production/default",
-  cache: new InMemoryCache(),
-});
 export default function RootLayout({
   children,
 }: {
@@ -15,7 +12,9 @@ export default function RootLayout({
     <html lang='en'>
       <head />
       <body>
-        <ApolloProvider client={client}>{children}</ApolloProvider>
+        <ApolloContext>
+          <main style={poppins.style}>{children}</main>
+        </ApolloContext>
       </body>
     </html>
   );
