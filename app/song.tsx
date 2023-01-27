@@ -1,7 +1,6 @@
 "use client";
 import { GET_ALL_SONGS } from "@/graphql/queries";
 import { useQuery } from "@apollo/client";
-import Image from "next/image";
 import Control from "./control";
 import Cover from "./cover";
 export default function Song() {
@@ -19,7 +18,7 @@ export default function Song() {
           {/* cover */}
           <Cover {...allSongs[1]} />
           {/* control */}
-          <Control />
+          <Control {...allSongs[1]} />
         </main>
       </div>
     </div>
