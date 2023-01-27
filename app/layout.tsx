@@ -1,8 +1,9 @@
+"use client";
 import "./globals.css";
 import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
 
 const client = new ApolloClient({
-  uri: "https://graphql-pokeapi.graphcdn.app/",
+  uri: "https://3wo8bdy6.api.sanity.io/v1/graphql/production/default",
   cache: new InMemoryCache(),
 });
 export default function RootLayout({

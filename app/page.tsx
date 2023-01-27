@@ -6,12 +6,9 @@ const poppins = Poppins({ subsets: ["latin"], weight: "400" });
 
 const GET_10_POKEMONS = gql`
   query {
-    pokemons(limit: 12, offset: 0) {
-      results {
-        name
-        dreamworld
-        artwork
-      }
+    allTest {
+      emon
+      another
     }
   }
 `;
